@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用規約 — Jet Head Strike</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 24px 16px 48px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    }
+    .app-name {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 4px;
+      font-weight: 500;
+      letter-spacing: .03em;
+    }
+    h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 4px; }
+    .updated { font-size: 13px; color: #6b7280; margin-bottom: 20px; }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 28px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0;
+    }
+    .tab-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px 12px;
+      font-size: 14px;
+      color: #6b7280;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      border-radius: 6px 6px 0 0;
+      transition: color .15s, border-color .15s;
+      white-space: nowrap;
+    }
+    .tab-btn:hover { color: #2563eb; }
+    .tab-btn.active { color: #2563eb; border-bottom-color: #2563eb; font-weight: 600; }
+
+    /* Content panels */
+    .lang-panel { display: none; }
+    .lang-panel.active { display: block; }
+
+    h2 { font-size: 1.05rem; font-weight: 700; margin: 24px 0 8px; color: #111; }
+    h2:first-of-type { margin-top: 0; }
+    p { margin-bottom: 10px; }
+    ul { margin: 0 0 10px 20px; }
+    li { margin-bottom: 4px; }
+    a { color: #2563eb; word-break: break-all; }
+    a:hover { text-decoration: underline; }
+
+    .footer-link {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+      color: #6b7280;
+      text-align: center;
+    }
+    .footer-link a { color: #2563eb; font-weight: 500; }
+  </style>
+</head>
+<body>
+<div class="card">
+  <p class="app-name">Jet Head Strike — View Games</p>
+
+  <div class="tabs" role="tablist" aria-label="Language selector">
+    <button class="tab-btn active" role="tab" aria-selected="true"  data-lang="ja">🇯🇵 日本語</button>
+    <button class="tab-btn"        role="tab" aria-selected="false" data-lang="en">🇺🇸 English</button>
+    <button class="tab-btn"        role="tab" aria-selected="false" data-lang="es">🇪🇸 Español</button>
+    <button class="tab-btn"        role="tab" aria-selected="false" data-lang="zh">🇨🇳 中文</button>
+    <button class="tab-btn"        role="tab" aria-selected="false" data-lang="fr">🇫🇷 Français</button>
+    <button class="tab-btn"        role="tab" aria-selected="false" data-lang="hi">🇮🇳 हिंदी</button>
+  </div>
+
+  <!-- Japanese -->
+  <div class="lang-panel active" id="panel-ja" role="tabpanel" lang="ja">
+    <h1>利用規約</h1>
+    <p class="updated">最終更新：2026年5月</p>
+
+    <h2>サービスの利用</h2>
+    <ul>
+      <li>本アプリは個人・非商業目的でのみ使用できます</li>
+      <li>不正行為・チート・リバースエンジニアリングを禁止します</li>
+    </ul>
+
+    <h2>課金・返金</h2>
+    <ul>
+      <li>アプリ内購入（爆弾アイテム・Premium プラン）は Google Play / App Store の規約に従います</li>
+      <li>購入完了後の返金は Google Play / App Store のポリシーに準じます</li>
+    </ul>
+
+    <h2>免責事項</h2>
+    <ul>
+      <li>本アプリは AS IS（現状のまま）で提供されます</li>
+      <li>サービスの中断・データ損失について責任を負いません</li>
+    </ul>
+
+    <h2>知的財産</h2>
+    <p>アプリのコンテンツは View Games に帰属します。</p>
+
+    <h2>規約の変更</h2>
+    <p>規約は予告なく変更される場合があります。</p>
+
+    <h2>準拠法</h2>
+    <p>日本法</p>
+
+    <h2>お問い合わせ</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <!-- English -->
+  <div class="lang-panel" id="panel-en" role="tabpanel" lang="en">
+    <h1>Terms of Use</h1>
+    <p class="updated">Last updated: May 2026</p>
+
+    <h2>Use of the Service</h2>
+    <ul>
+      <li>This app may be used for personal, non-commercial purposes only</li>
+      <li>Cheating, hacking, and reverse engineering are strictly prohibited</li>
+    </ul>
+
+    <h2>Purchases &amp; Refunds</h2>
+    <ul>
+      <li>In-app purchases (bomb items, Premium plan) are subject to Google Play / App Store terms</li>
+      <li>Refunds after purchase are governed by Google Play / App Store policies</li>
+    </ul>
+
+    <h2>Disclaimer</h2>
+    <ul>
+      <li>This app is provided "AS IS" without warranties of any kind</li>
+      <li>We are not liable for service interruptions or data loss</li>
+    </ul>
+
+    <h2>Intellectual Property</h2>
+    <p>All app content is the property of View Games.</p>
+
+    <h2>Changes to Terms</h2>
+    <p>These terms may be updated without prior notice.</p>
+
+    <h2>Governing Law</h2>
+    <p>Laws of Japan</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <!-- Spanish -->
+  <div class="lang-panel" id="panel-es" role="tabpanel" lang="es">
+    <h1>Términos de Uso</h1>
+    <p class="updated">Última actualización: mayo de 2026</p>
+
+    <h2>Uso del servicio</h2>
+    <ul>
+      <li>Esta aplicación solo puede usarse con fines personales y no comerciales</li>
+      <li>Se prohíbe el uso de trampas, hacks y la ingeniería inversa</li>
+    </ul>
+
+    <h2>Compras y reembolsos</h2>
+    <ul>
+      <li>Las compras dentro de la aplicación (artículos de bomba, plan Premium) están sujetas a los términos de Google Play / App Store</li>
+      <li>Los reembolsos tras la compra se rigen por las políticas de Google Play / App Store</li>
+    </ul>
+
+    <h2>Descargo de responsabilidad</h2>
+    <ul>
+      <li>Esta aplicación se proporciona "TAL CUAL" sin garantías de ningún tipo</li>
+      <li>No somos responsables de interrupciones del servicio ni de pérdida de datos</li>
+    </ul>
+
+    <h2>Propiedad intelectual</h2>
+    <p>Todo el contenido de la aplicación es propiedad de View Games.</p>
+
+    <h2>Cambios en los términos</h2>
+    <p>Estos términos pueden actualizarse sin previo aviso.</p>
+
+    <h2>Ley aplicable</h2>
+    <p>Leyes de Japón</p>
+
+    <h2>Contacto</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <!-- Chinese -->
+  <div class="lang-panel" id="panel-zh" role="tabpanel" lang="zh">
+    <h1>使用条款</h1>
+    <p class="updated">最后更新：2026年5月</p>
+
+    <h2>服务使用</h2>
+    <ul>
+      <li>本应用仅供个人非商业用途使用</li>
+      <li>严禁作弊、黑客攻击和逆向工程</li>
+    </ul>
+
+    <h2>购买与退款</h2>
+    <ul>
+      <li>应用内购买（炸弹道具、Premium 方案）须遵守 Google Play / App Store 条款</li>
+      <li>购买完成后的退款依照 Google Play / App Store 政策处理</li>
+    </ul>
+
+    <h2>免责声明</h2>
+    <ul>
+      <li>本应用以"现状"提供，不附任何形式的保证</li>
+      <li>我们对服务中断或数据丢失不承担责任</li>
+    </ul>
+
+    <h2>知识产权</h2>
+    <p>应用的所有内容归 View Games 所有。</p>
+
+    <h2>条款变更</h2>
+    <p>本条款可能在不事先通知的情况下更新。</p>
+
+    <h2>适用法律</h2>
+    <p>日本法律</p>
+
+    <h2>联系方式</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <!-- French -->
+  <div class="lang-panel" id="panel-fr" role="tabpanel" lang="fr">
+    <h1>Conditions d'utilisation</h1>
+    <p class="updated">Dernière mise à jour : mai 2026</p>
+
+    <h2>Utilisation du service</h2>
+    <ul>
+      <li>Cette application est réservée à un usage personnel et non commercial</li>
+      <li>La triche, le piratage et la rétro-ingénierie sont strictement interdits</li>
+    </ul>
+
+    <h2>Achats et remboursements</h2>
+    <ul>
+      <li>Les achats intégrés (objets bombes, plan Premium) sont soumis aux conditions de Google Play / App Store</li>
+      <li>Les remboursements après achat sont régis par les politiques de Google Play / App Store</li>
+    </ul>
+
+    <h2>Clause de non-responsabilité</h2>
+    <ul>
+      <li>Cette application est fournie « EN L'ÉTAT » sans garantie d'aucune sorte</li>
+      <li>Nous ne sommes pas responsables des interruptions de service ou des pertes de données</li>
+    </ul>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>Tout le contenu de l'application appartient à View Games.</p>
+
+    <h2>Modification des conditions</h2>
+    <p>Ces conditions peuvent être mises à jour sans préavis.</p>
+
+    <h2>Droit applicable</h2>
+    <p>Droit japonais</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <!-- Hindi -->
+  <div class="lang-panel" id="panel-hi" role="tabpanel" lang="hi">
+    <h1>उपयोग की शर्तें</h1>
+    <p class="updated">अंतिम अपडेट: मई 2026</p>
+
+    <h2>सेवा का उपयोग</h2>
+    <ul>
+      <li>यह ऐप केवल व्यक्तिगत, गैर-व्यावसायिक उद्देश्यों के लिए उपयोग किया जा सकता है</li>
+      <li>धोखाधड़ी, हैकिंग और रिवर्स इंजीनियरिंग सख्त वर्जित है</li>
+    </ul>
+
+    <h2>खरीदारी और वापसी</h2>
+    <ul>
+      <li>इन-ऐप खरीदारी (बम आइटम, Premium प्लान) Google Play / App Store की शर्तों के अधीन हैं</li>
+      <li>खरीदारी के बाद रिफंड Google Play / App Store की नीतियों के अनुसार होगा</li>
+    </ul>
+
+    <h2>अस्वीकरण</h2>
+    <ul>
+      <li>यह ऐप "यथावत" (AS IS) प्रदान किया जाता है, बिना किसी वारंटी के</li>
+      <li>सेवा में रुकावट या डेटा हानि के लिए हम जिम्मेदार नहीं हैं</li>
+    </ul>
+
+    <h2>बौद्धिक संपदा</h2>
+    <p>ऐप की सभी सामग्री View Games की संपत्ति है।</p>
+
+    <h2>शर्तों में बदलाव</h2>
+    <p>ये शर्तें बिना पूर्व सूचना के अपडेट की जा सकती हैं।</p>
+
+    <h2>शासी कानून</h2>
+    <p>जापान का कानून</p>
+
+    <h2>संपर्क</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <div class="footer-link">
+    <a href="privacy.html">プライバシーポリシー / Privacy Policy / Política de Privacidad / 隐私政策 / Politique de Confidentialité / गोपनीयता नीति</a>
+  </div>
+</div>
+
+<script>
+  const titles = {
+    ja: '利用規約 — Jet Head Strike',
+    en: 'Terms of Use — Jet Head Strike',
+    es: 'Términos de Uso — Jet Head Strike',
+    zh: '使用条款 — Jet Head Strike',
+    fr: "Conditions d'utilisation — Jet Head Strike",
+    hi: 'उपयोग की शर्तें — Jet Head Strike'
+  };
+
+  document.querySelectorAll('.tab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = this.dataset.lang;
+
+      document.querySelectorAll('.tab-btn').forEach(function(b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.lang-panel').forEach(function(p) {
+        p.classList.remove('active');
+      });
+
+      this.classList.add('active');
+      this.setAttribute('aria-selected', 'true');
+      document.getElementById('panel-' + lang).classList.add('active');
+      document.documentElement.lang = lang;
+      document.title = titles[lang];
+    });
+  });
+</script>
+</body>
+</html>

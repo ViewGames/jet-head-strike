@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — Jet Head Strike</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 24px 16px 48px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    }
+    .app-name {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 4px;
+      font-weight: 500;
+      letter-spacing: .03em;
+    }
+    h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 4px; }
+    .updated { font-size: 13px; color: #6b7280; margin-bottom: 20px; }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 28px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0;
+    }
+    .tab-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px 12px;
+      font-size: 14px;
+      color: #6b7280;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      border-radius: 6px 6px 0 0;
+      transition: color .15s, border-color .15s;
+      white-space: nowrap;
+    }
+    .tab-btn:hover { color: #2563eb; }
+    .tab-btn.active { color: #2563eb; border-bottom-color: #2563eb; font-weight: 600; }
+
+    /* Content panels */
+    .lang-panel { display: none; }
+    .lang-panel.active { display: block; }
+
+    h2 { font-size: 1.05rem; font-weight: 700; margin: 24px 0 8px; color: #111; }
+    h2:first-of-type { margin-top: 0; }
+    p { margin-bottom: 10px; }
+    ul { margin: 0 0 10px 20px; }
+    li { margin-bottom: 4px; }
+    a { color: #2563eb; word-break: break-all; }
+    a:hover { text-decoration: underline; }
+
+    .footer-link {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+      color: #6b7280;
+      text-align: center;
+    }
+    .footer-link a { color: #2563eb; font-weight: 500; }
+  </style>
+</head>
+<body>
+<div class="card">
+  <p class="app-name">Jet Head Strike — View Games</p>
+
+  <div class="tabs" role="tablist" aria-label="Language selector">
+    <button class="tab-btn active" role="tab" aria-selected="true"  data-lang="ja">🇯🇵 日本語</button>
+    <button class="tab-btn"        role="tab" aria-selected="false" data-lang="en">🇺🇸 English</button>
+    <button class="tab-btn"        role="tab" aria-selected="false" data-lang="es">🇪🇸 Español</button>
+    <button class="tab-btn"        role="tab" aria-selected="false" data-lang="zh">🇨🇳 中文</button>
+    <button class="tab-btn"        role="tab" aria-selected="false" data-lang="fr">🇫🇷 Français</button>
+    <button class="tab-btn"        role="tab" aria-selected="false" data-lang="hi">🇮🇳 हिंदी</button>
+  </div>
+
+  <!-- Japanese -->
+  <div class="lang-panel active" id="panel-ja" role="tabpanel" lang="ja">
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新：2026年5月</p>
+
+    <h2>収集するデータ</h2>
+    <ul>
+      <li>ゲームの進行状況・スコア（端末内に保存）</li>
+      <li>オンライン対戦用の匿名ユーザーID（Firebase Realtime Database に保存）</li>
+      <li>対戦結果・マッチング情報（Firebase Realtime Database に保存）</li>
+    </ul>
+
+    <h2>広告について</h2>
+    <p>本アプリは Google AdMob（Google LLC）による広告を表示します。AdMob はデバイス情報・広告 ID を収集する場合があります。詳細は Google のプライバシーポリシー（<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>）をご確認ください。</p>
+
+    <h2>第三者サービス</h2>
+    <ul>
+      <li>Firebase Realtime Database（Google LLC）：オンライン対戦機能</li>
+      <li>Google AdMob（Google LLC）：広告配信</li>
+    </ul>
+
+    <h2>データの保持</h2>
+    <ul>
+      <li>端末内データはアプリ削除時に消去されます</li>
+      <li>Firebase のデータはマッチング終了後に自動削除されます</li>
+    </ul>
+
+    <h2>お子様のプライバシー</h2>
+    <p>本アプリは 13 歳未満を対象としていません。</p>
+
+    <h2>お問い合わせ</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <!-- English -->
+  <div class="lang-panel" id="panel-en" role="tabpanel" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 2026</p>
+
+    <h2>Data We Collect</h2>
+    <ul>
+      <li>Game progress and scores (stored locally on your device)</li>
+      <li>Anonymous user ID for online multiplayer (stored in Firebase Realtime Database)</li>
+      <li>Match results and matchmaking information (stored in Firebase Realtime Database)</li>
+    </ul>
+
+    <h2>Advertising</h2>
+    <p>This app displays ads via Google AdMob (Google LLC). AdMob may collect device information and advertising identifiers. Please review Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a> for details.</p>
+
+    <h2>Third-Party Services</h2>
+    <ul>
+      <li>Firebase Realtime Database (Google LLC): online multiplayer functionality</li>
+      <li>Google AdMob (Google LLC): ad delivery</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <ul>
+      <li>Local device data is deleted when you uninstall the app</li>
+      <li>Firebase data is automatically deleted after a match ends</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>This app is not directed at children under the age of 13.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <!-- Spanish -->
+  <div class="lang-panel" id="panel-es" role="tabpanel" lang="es">
+    <h1>Política de Privacidad</h1>
+    <p class="updated">Última actualización: mayo de 2026</p>
+
+    <h2>Datos que recopilamos</h2>
+    <ul>
+      <li>Progreso del juego y puntuaciones (almacenados localmente en el dispositivo)</li>
+      <li>ID de usuario anónimo para el modo multijugador en línea (almacenado en Firebase Realtime Database)</li>
+      <li>Resultados de partidas e información de emparejamiento (almacenados en Firebase Realtime Database)</li>
+    </ul>
+
+    <h2>Publicidad</h2>
+    <p>Esta aplicación muestra anuncios a través de Google AdMob (Google LLC). AdMob puede recopilar información del dispositivo e identificadores publicitarios. Consulte la Política de Privacidad de Google en <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a> para más detalles.</p>
+
+    <h2>Servicios de terceros</h2>
+    <ul>
+      <li>Firebase Realtime Database (Google LLC): funcionalidad multijugador en línea</li>
+      <li>Google AdMob (Google LLC): entrega de anuncios</li>
+    </ul>
+
+    <h2>Retención de datos</h2>
+    <ul>
+      <li>Los datos locales del dispositivo se eliminan al desinstalar la aplicación</li>
+      <li>Los datos de Firebase se eliminan automáticamente al finalizar una partida</li>
+    </ul>
+
+    <h2>Privacidad de los niños</h2>
+    <p>Esta aplicación no está dirigida a menores de 13 años.</p>
+
+    <h2>Contacto</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <!-- Chinese -->
+  <div class="lang-panel" id="panel-zh" role="tabpanel" lang="zh">
+    <h1>隐私政策</h1>
+    <p class="updated">最后更新：2026年5月</p>
+
+    <h2>我们收集的数据</h2>
+    <ul>
+      <li>游戏进度和分数（本地存储在设备上）</li>
+      <li>用于在线多人游戏的匿名用户ID（存储在 Firebase Realtime Database）</li>
+      <li>对战结果和匹配信息（存储在 Firebase Realtime Database）</li>
+    </ul>
+
+    <h2>广告</h2>
+    <p>本应用通过 Google AdMob（Google LLC）展示广告。AdMob 可能会收集设备信息和广告标识符。详情请参阅 Google 隐私政策：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+
+    <h2>第三方服务</h2>
+    <ul>
+      <li>Firebase Realtime Database（Google LLC）：在线对战功能</li>
+      <li>Google AdMob（Google LLC）：广告投放</li>
+    </ul>
+
+    <h2>数据保留</h2>
+    <ul>
+      <li>本地设备数据在卸载应用时将被删除</li>
+      <li>Firebase 数据在对战结束后自动删除</li>
+    </ul>
+
+    <h2>儿童隐私</h2>
+    <p>本应用不面向13岁以下儿童。</p>
+
+    <h2>联系方式</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <!-- French -->
+  <div class="lang-panel" id="panel-fr" role="tabpanel" lang="fr">
+    <h1>Politique de Confidentialité</h1>
+    <p class="updated">Dernière mise à jour : mai 2026</p>
+
+    <h2>Données collectées</h2>
+    <ul>
+      <li>Progression du jeu et scores (stockés localement sur l'appareil)</li>
+      <li>Identifiant utilisateur anonyme pour le mode multijoueur en ligne (stocké dans Firebase Realtime Database)</li>
+      <li>Résultats des parties et informations de jumelage (stockés dans Firebase Realtime Database)</li>
+    </ul>
+
+    <h2>Publicité</h2>
+    <p>Cette application affiche des publicités via Google AdMob (Google LLC). AdMob peut collecter des informations sur l'appareil et des identifiants publicitaires. Veuillez consulter la Politique de Confidentialité de Google à l'adresse <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a> pour plus de détails.</p>
+
+    <h2>Services tiers</h2>
+    <ul>
+      <li>Firebase Realtime Database (Google LLC) : fonctionnalité multijoueur en ligne</li>
+      <li>Google AdMob (Google LLC) : diffusion de publicités</li>
+    </ul>
+
+    <h2>Conservation des données</h2>
+    <ul>
+      <li>Les données locales de l'appareil sont supprimées lors de la désinstallation de l'application</li>
+      <li>Les données Firebase sont automatiquement supprimées à la fin d'une partie</li>
+    </ul>
+
+    <h2>Confidentialité des enfants</h2>
+    <p>Cette application n'est pas destinée aux enfants de moins de 13 ans.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <!-- Hindi -->
+  <div class="lang-panel" id="panel-hi" role="tabpanel" lang="hi">
+    <h1>गोपनीयता नीति</h1>
+    <p class="updated">अंतिम अपडेट: मई 2026</p>
+
+    <h2>हम जो डेटा एकत्र करते हैं</h2>
+    <ul>
+      <li>गेम की प्रगति और स्कोर (डिवाइस पर स्थानीय रूप से संग्रहीत)</li>
+      <li>ऑनलाइन मल्टीप्लेयर के लिए अनाम उपयोगकर्ता आईडी (Firebase Realtime Database में संग्रहीत)</li>
+      <li>मैच परिणाम और मैचमेकिंग जानकारी (Firebase Realtime Database में संग्रहीत)</li>
+    </ul>
+
+    <h2>विज्ञापन</h2>
+    <p>यह ऐप Google AdMob (Google LLC) के माध्यम से विज्ञापन प्रदर्शित करता है। AdMob डिवाइस जानकारी और विज्ञापन पहचानकर्ता एकत्र कर सकता है। विवरण के लिए Google की गोपनीयता नीति देखें: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+
+    <h2>तृतीय-पक्ष सेवाएं</h2>
+    <ul>
+      <li>Firebase Realtime Database (Google LLC): ऑनलाइन मल्टीप्लेयर कार्यक्षमता</li>
+      <li>Google AdMob (Google LLC): विज्ञापन वितरण</li>
+    </ul>
+
+    <h2>डेटा प्रतिधारण</h2>
+    <ul>
+      <li>ऐप अनइंस्टॉल करने पर स्थानीय डिवाइस डेटा हटा दिया जाता है</li>
+      <li>मैच समाप्त होने के बाद Firebase डेटा स्वचालित रूप से हटा दिया जाता है</li>
+    </ul>
+
+    <h2>बच्चों की गोपनीयता</h2>
+    <p>यह ऐप 13 वर्ष से कम आयु के बच्चों के लिए नहीं है।</p>
+
+    <h2>संपर्क</h2>
+    <p><a href="mailto:admin@view.ist">admin@view.ist</a></p>
+  </div>
+
+  <div class="footer-link">
+    <a href="terms.html">利用規約 / Terms of Use / Términos de Uso / 使用条款 / Conditions d'utilisation / उपयोग की शर्तें</a>
+  </div>
+</div>
+
+<script>
+  const titles = {
+    ja: 'プライバシーポリシー — Jet Head Strike',
+    en: 'Privacy Policy — Jet Head Strike',
+    es: 'Política de Privacidad — Jet Head Strike',
+    zh: '隐私政策 — Jet Head Strike',
+    fr: 'Politique de Confidentialité — Jet Head Strike',
+    hi: 'गोपनीयता नीति — Jet Head Strike'
+  };
+
+  document.querySelectorAll('.tab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = this.dataset.lang;
+
+      document.querySelectorAll('.tab-btn').forEach(function(b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.lang-panel').forEach(function(p) {
+        p.classList.remove('active');
+      });
+
+      this.classList.add('active');
+      this.setAttribute('aria-selected', 'true');
+      document.getElementById('panel-' + lang).classList.add('active');
+      document.documentElement.lang = lang;
+      document.title = titles[lang];
+    });
+  });
+</script>
+</body>
+</html>
